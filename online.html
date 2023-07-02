@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration for Technical Programs</title>
+    <style>
+        body {
+            background-image: url('online.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white sheet */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+        }
+
+        h2 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+
+        input[type="text"],
+        select {
+            width: 220px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-to-index {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-to-index:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-to-index">Back to Index</a>
+    <div class="container">
+        <h2>Online Registration for Technical Programs</h2>
+        <form action="online_course.php" method="post">
+            <label for="participantName">Participant Name:</label>
+            <input type="text" id="participantName" name="participantName" required><br>
+
+            <label for="collegeName">College Name:</label>
+            <input type="text" id="collegeName" name="collegeName" required><br>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">Select</option>
+                <option value="CSE">CSE</option>
+                <option value="ISE">ISE</option>
+                <option value="ECE">ECE</option>
+            </select><br>
+
+            <label for="programs">Programs:</label>
+            <div>
+                <label><input type="checkbox" name="programs[]" value="C#"> C#</label>
+                <label><input type="checkbox" name="programs[]" value="C++"> C++</label><br>
+                <label><input type="checkbox" name="programs[]" value="Java"> Java</label>
+                <label><input type="checkbox" name="programs[]" value="C"> C</label><br>
+            </div>
+
+            <label for="Days">Number of Days:</label>
+            <select id="numOfDays" name="numOfDays" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br>
+
+            <label>Gender:</label><br>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label>Type of Member:</label><br>
+            <label><input type="radio" name="memberType" value="Internal" required> Internal</label>
+            <label><input type="radio" name="memberType" value="External"> External</label><br>
+
+            <input type="submit" value="Generate Report">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Hotel Management Report</title>
+    <style>
+        body {
+            background-image: url('hotel.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white sheet */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+        }
+
+        h2 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: right;
+        }
+
+        input[type="text"],
+        select {
+            width: 220px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-to-index {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-to-index:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-to-index">Back to Index</a>
+    <div class="container">
+        <h2>Online Hotel Management Report</h2>
+        <form action="online_hotel.php" method="post">
+            <label for="idNo">Id No:</label>
+            <input type="text" id="idNo" name="idNo" required><br>
+
+            <label for="cname">Customer Name:</label>
+            <input type="text" id="cname" name="cname" required><br>
+
+            <label for="add1">Address Line 1:</label>
+            <input type="text" id="add1" name="add1" required><br>
+
+            <label for="add2">Address Line 2:</label>
+            <input type="text" id="add2" name="add2" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="pin">PIN:</label>
+            <input type="text" id="pin" name="pin" required><br>
+
+            <label for="emailId">Email ID:</label>
+            <input type="text" id="emailId" name="emailId" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label>Sex:</label><br>
+            <label><input type="radio" name="sex" value="Male" required> Male</label>
+            <label><input type="radio" name="sex" value="Female"> Female</label><br>
+
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType" required>
+                <option value="">Select</option>
+                <option value="Super Deluxe">Super Deluxe</option>
+                <option value="Deluxe">Deluxe</option>
+                <option value="Double">Double</option>
+                <option value="Single">Single</option>
+            </select><br>
+
+            <label for="noOfStay">Number of Stay:</label>
+            <select id="noOfStay" name="noOfStay" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br>
+
+            <label>Type of Package:</label><br>
+            <label><input type="radio" name="packageType" value="Summer" required> Summer</label>
+            <label><input type="radio" name="packageType" value="Non-Summer"> Non-Summer</label><br>
+
+            <input type="submit" value="Generate Report">
+        </form>
+    </div>
+</body>
+</html>

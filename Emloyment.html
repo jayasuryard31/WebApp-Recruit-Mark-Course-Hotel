@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Recruitment Drive</title>
+    <style>
+        body {
+            background-image: url('corporate.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white sheet */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+        }
+
+        h2 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 220px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .back-to-index {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-to-index:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-to-index">Back to Index</a>
+    <div class="container">
+        <h2>Online Recruitment Drive</h2>
+        <form action="emp_drive.php" method="post">
+            <label for="idNo">Id.no:</label>
+            <input type="text" id="idNo" name="idNo" required><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="add1">Address Line 1:</label>
+            <input type="text" id="add1" name="add1" required><br>
+
+            <label for="add2">Address Line 2:</label>
+            <input type="text" id="add2" name="add2" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br>
+
+            <label for="pin">Pin:</label>
+            <input type="text" id="pin" name="pin" required><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label>Sex:</label>
+            <label><input type="radio" name="sex" value="Male" required> Male</label>
+            <label><input type="radio" name="sex" value="Female" required> Female</label><br>
+
+            <label for="qualification">Qualification:</label>
+            <select id="qualification" name="qualification" required>
+                <option value="">Select</option>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+            </select><br>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">Select</option>
+                <option value="Distinction">Distinction</option>
+                <option value="First Class">First Class</option>
+                <option value="Second Class">Second Class</option>
+            </select><br>
+
+            <label for="experience">Experience:</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select</option>
+                <option value="Less than 1 year">Less than 1 year</option>
+                <option value="1-3 years">1-3 years</option>
+                <option value="3+ years">3+ years</option>
+            </select><br>
+
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
