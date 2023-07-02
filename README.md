@@ -8,6 +8,7 @@ Online Hotel Management - Room charges based on packages
 Snapshots:
 
 <img src="https://github.com/jayasuryard31/WebApp-Recruit-Mark-Course-Hotel/assets/92865629/34f91627-846a-4cc4-88b5-091344907b5b" width="300">
+<br>
 <img src="https://github.com/jayasuryard31/WebApp-Recruit-Mark-Course-Hotel/assets/92865629/d9c1ddfb-a6d9-45f2-8927-09c3705116c1" width="300">
 <img src="https://github.com/jayasuryard31/WebApp-Recruit-Mark-Course-Hotel/assets/92865629/e37f7283-f7c3-4f09-9a46-2a1d5bdc9376" width="300">
 <img src="https://github.com/jayasuryard31/WebApp-Recruit-Mark-Course-Hotel/assets/92865629/81e3905d-1045-450b-a9b9-8b062bd876a3" width="300">
