@@ -1,9 +1,9 @@
 Web-based application with HTML and PHP modules:
 
-Employment Drive - Recruitment with selection criteria
-Mark Report - Calculate average marks and class distinction
-Online Course - Registration with fees calculation
-Online Hotel Management - Room charges based on packages
+Employment Drive - Recruitment with selection criteria <br>
+Mark Report - Calculate average marks and class distinction <br>
+Online Course - Registration with fees calculation <br>
+Online Hotel Management - Room charges based on packages<br>
 
 Snapshots:
 <center>
